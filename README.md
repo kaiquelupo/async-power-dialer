@@ -36,7 +36,6 @@ After installing the CLI, you need to login using `pulumi login`. By default, th
 
 - **deploy-resources**: deploy all resources to your dev project
 - **preview-resources**: preview all changes to your dev project
-- **watch-resources**: this sends all changes to your dev project on the fly (as soon as the changes are saved in the file). It is similar to a `hot reload` feature and in my opinion it is **an amazing feature for developing and testing without using the console at all!**
 
 If you want to test different branches locally, you can change the environment variables for each branch. Remember, the idea is that each branch/stack is a different Twilio Project (but you can change this abstraction depending on your use case). 
 
