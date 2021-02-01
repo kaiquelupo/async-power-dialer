@@ -1,4 +1,4 @@
-name: power-dialer
+name: async-power-dialer
 runtime: nodejs
 description: Power Dialer using Twilio
 main: src/resources
