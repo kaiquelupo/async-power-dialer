@@ -37,7 +37,8 @@ jobs:
           echo "BRANCH_NAME=${branch}" >> $GITHUB_ENV
           array=( 
             TWILIO_ACCOUNT_SID TWILIO_AUTH_TOKEN FLEX_WORKSPACE_SID  
-            TWILIO_NUMBER RETRY_TIME_IN_MINUTES
+            TWILIO_NUMBER RETRY_TIME_IN_MINUTES OVERRIDE_FLEX_WORKSPACE_EVENT_CALLBACK 
+            QUEUES_FOR_POWER_DIALERS
           )
           for i in "${array[@]}"
           do
@@ -62,3 +63,5 @@ jobs:
           FLEX_WORKSPACE_SID: ${{  secrets[env.FLEX_WORKSPACE_SID_VAR] }}
           TWILIO_NUMBER: ${{  secrets[env.TWILIO_NUMBER_VAR] }}
           RETRY_TIME_IN_MINUTES: ${{  secrets[env.RETRY_TIME_IN_MINUTES_VAR] }}
+          OVERRIDE_FLEX_WORKSPACE_EVENT_CALLBACK: ${{  secrets[env.OVERRIDE_FLEX_WORKSPACE_EVENT_CALLBACK_VAR] }}
+          QUEUES_FOR_POWER_DIALERS: ${{  secrets[env.QUEUES_FOR_POWER_DIALERS_VAR] }}
